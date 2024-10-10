@@ -1,0 +1,251 @@
+
+.container{
+    background:linear-gradient(to bottom ,rgb(255, 207, 241),rgba(190, 37, 114, 0.532));
+
+}
+
+.box{
+    width: 100%;
+    height:70%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.music{
+    position: relative;
+    background-color: rgb(250, 235, 215) ;
+    width: 25rem;
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden; 
+    
+} 
+
+/*music playlist*/
+.music-playlist{
+    background: rgba(245, 222, 179, 0.859);
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 1rem;
+    width:100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+
+}
+
+  
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.header .fas.fa-music{
+    font-size: 1.6rem;
+    color:crimson;
+    
+}
+.fa-bars{
+    cursor: pointer;
+
+}
+.header h2{
+    font-family: 'Times New Roman';
+    font-size: 2rem;
+    background: linear-gradient(to bottom,black,rgb(106, 151, 164),lightblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bolder;
+}
+.details{
+    margin: 2rem 0;
+    text-align: center;
+   
+}
+.details img{
+    width: 13vw;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 4px solid lightcoral;
+    display: inline-block;
+}
+.details .artist{
+    font-size: 1.2rem;
+    font-weight:600;
+    color:crimson;
+}
+.details .title{
+    font-size: 1.2rem;
+    font-weight:600;
+    color:rgb(0, 0, 0);
+}
+.control{
+    background: pink;
+    padding: 2rem 1rem;
+    border-radius: 5rem 5rem 0 0;
+}
+.songTimer{
+    color: rgb(0, 44, 29);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 1rem 0;
+
+}
+input[ type="range"]{
+    appearance: none;
+    width:50%;
+    outline:none;
+    height: 2px;
+    margin: 0 10%;
+    
+}
+input[ type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    height: 1.3rem;
+    width:1.3rem;
+    background: palevioletred;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.buttons{
+    text-align: center;
+    margin: 2rem auto;
+    width: 60%;
+    padding: 5px 0;
+    background: whitesmoke;
+    border-radius: 5px;
+   
+    
+}
+.duration input[ type="range"]{
+    width: 70%;
+}
+.buttons >* {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.play{
+    width:3.5rem;
+    height:3.5rem;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    color:rgb(176, 81, 248) ;
+   
+    
+}
+.prev{
+    color:rgb(176, 81, 248) ;
+    
+}
+.next{
+    color:rgb(176, 81, 248) ;
+    
+}
+.play-all{
+    display: block;
+    margin: 0 auto;
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+}
+.volume p{
+    background:palevioletred ;
+    border-radius: 25%;
+    font-size: 1.4rem;
+    height: 2rem;
+    padding: 0 3px;
+    margin-right: 8px;
+
+}
+.volume i{
+    color: rgb(61, 122, 165);
+    font-size: 1.3rem;
+    height: 2rem;
+    padding:  0 3px;
+    margin-right:8px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.durationvolume input[type="range"]{
+    margin: 0;
+}
+.header-playlist{
+    color:crimson;
+    padding: 5px 0;
+    border-bottom: 2px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+   
+.fa-times{
+    cursor: pointer;
+    text-align: right;
+    margin-right: 1cm ;
+
+}
+.fa-music{
+    margin-left: 1cm ;
+}
+.playlist-div{
+    width: 100%;
+    height:80vh;
+    overflow-y: auto;
+}
+.playlist{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.playlist-div::-webkit-scrollbar {
+    height: 5px;
+    width: 4px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+}
+  
+.playlist-div::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+  
+.playlist-div::-webkit-scrollbar-thumb {
+    background-color: red;
+    outline: 2px solid #eee;
+}
+.song-index{
+    font-size: 1.4rem;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+.single-song{
+    background:linear-gradient(to left ,rgb(255, 207, 241),rgba(190, 37, 114, 0.532),rgb(217, 51, 76));
+    font-weight: 600;
+    font-size: 1.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.playlist p{
+    width: 90%;
+    font-size: 1.4rem;
+    border-bottom: 2px solid black;
+    padding: 5px 0;
+    cursor: pointer;
+}
